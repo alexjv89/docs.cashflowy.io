@@ -1,7 +1,7 @@
 ---
 title: spreadsheet.values.get
 date: Last Modified 
-permalink: /passthrough-api/google-sheets/values.get.html
+permalink: /passthrough-api/google-sheets/spreadsheet.values.get.html
 eleventyNavigation:
   order: 10
   parent: google-sheets
