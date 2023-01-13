@@ -24,7 +24,7 @@ Original API docs - https://developers.google.com/sheets/api/reference/rest/v4/s
 ``` js
 var range = `raw!1:1000`;
 var options = {
-  method:'PUT',
+  method:'POST',
   url:`/v4/spreadsheets/${sheet_id}/values/${range}:clear`,
   integration:27,
   org:25,

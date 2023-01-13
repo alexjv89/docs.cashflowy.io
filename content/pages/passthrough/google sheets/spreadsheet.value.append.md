@@ -25,7 +25,7 @@ Original API docs - https://developers.google.com/sheets/api/reference/rest/v4/s
 var range = `raw!1:1000`;
 var options = {
   method:'POST',
-  url:`/v4/spreadsheets/${gsheet_id}/values/${range}`,
+  url:`/v4/spreadsheets/${gsheet_id}/values/${range}:append`,
   integration:27,
   org:25,
   params:{
