@@ -13,6 +13,7 @@ eleventyNavigation:
 ```yaml
 - name: Append transactions
   rd_id: 89462c62-b536-414a-b700-497ae45000da
+  type: maker
   description: Append transactions to the respective budget sheet
   group: Maker/Cashflow report
   executionEnabled: true
@@ -36,7 +37,8 @@ eleventyNavigation:
     hour: '*'
     minute: 0/25
     seconds: '0'
-    weekday: '*'
+    day_of_week: '*'
+    day_of_month: '?' #specify either day_of_week or day_of_month not both
     year: '*'
   sequence:
     commands:
@@ -52,6 +54,7 @@ eleventyNavigation:
 |----|----|----|
 | name | Name of the job. This is will be visible in the UI | yes |
 | rd_id | Unique id of the job. This is auto generated. Id is required if you want to update an existing job.  | required for update requests |
+| type | Can be `maker` or `checker`  | yes |
 | description | Write description of the job here for others to understand this job better | optional |
 | group | Organise jobs into groups. Groups can be nested. Nested groups are separated by `/` | optional |
 | executionEnabled | Can be `true` or `false`. Set this to false to prevent users from executing this job. Scheduled execution also will be stopped when set to false | yes |
@@ -77,6 +80,7 @@ eleventyNavigation:
 | hour | select hours | yes |
 | minute | select minutes | yes |
 | seconds | select seconds  | yes |
-| weekday | select which weekday to execute this. | no |
+| day_of_week | select which day of the week to execute this. | no |
+| day_of_month | select which day of the month to execute this. | no |
 | year | select which year to execute this.  | yes |
 | cron | Enter the value as a cron string (not supported yet) | no |
