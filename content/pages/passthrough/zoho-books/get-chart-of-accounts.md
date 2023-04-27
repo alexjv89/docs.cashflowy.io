@@ -14,13 +14,13 @@ Original API docs - https://www.zoho.com/books/api/v3/chart-of-accounts/#list-ch
 ### Cashflowy Usage
 ``` js
 var options = {
-			method:'GET',
-			url:'/chartofaccounts',
-			integration:INTEGRATIONS.ZOHO_BOOKS,
-			org:ORG,
-			params:{
+	method:'GET',
+	url:'/chartofaccounts',
+	integration:INTEGRATIONS.ZOHO_BOOKS,
+	org:ORG,
+	params:{
 				filter_by:'AccountType.All'
 			},
-		}
-		var result = await cf.passthrough(options)
+	}
+var result = await cf.passthrough(options)
 ```
