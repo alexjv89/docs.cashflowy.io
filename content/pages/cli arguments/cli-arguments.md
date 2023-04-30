@@ -5,7 +5,7 @@ permalink: /cli-arguments/index.html
 eleventyNavigation:
   order: 100
   key: cli-arguments
-  title: CLI Arguments
+  title: CLI Arguments in Scripts
 ---
 ### CLI Arguments for Atomic scripts
 | **name**     | **type** | **Zoho Books** | **Quickbooks** |

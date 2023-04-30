@@ -26,8 +26,8 @@ Applicable for GET/PUT/POST requests.
 ---
 ## Example illustrating the anatomy of a Passthrough API endpoint
 `https://app.cashflowy.io/passthrough?url=/banktransactions&org_id=36&integration_id=9` is the passthrough API URL to GET/PUT/POST
-* Bank transactions (`/banktransactions`) present in the Zoho Books account
-* of the client who Cashflowy org id = `36`.
+* Bank transactions present in the Zoho Books account (`/banktransactions` -is the official Zoho Books endpoint for the `Bank transactions` Zoho Books object [as mentioned in the Zoho Books API](https://www.zoho.com/books/api/v3/bank-transactions/#overview)) 
+* of the client whose Cashflowy org id = `36`.
 * This becomes possible because the Cashflowy org `36` has already set up a Cashflowy <> Zoho Books integeration, and the id of that integration is `9`
 
 #### Notes
