@@ -18,12 +18,11 @@ Applicable for GET/PUT/POST requests.
 | api-secret          | {{api-secret}}        |
 
 ### Required Parameters
-| **Parameter**  | **Parameter value**                                                              | **Example**                                                                                                      |
-|----------------|----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| url            | {{third-party API endpoint, without the third-party base url}}                   | `/banktransactions` (This is the official Zoho Books API endpoint for Bank Transactions in a Zoho Books account) |
-| org_id         | {{org_id of the Cashflowy org/account}}                                          | `36`                                                                                                             |
-| integration_id | {{integration_id of the org's integration with the particular third-party tool}} | `9`                                                                                                              |
-
+| **Parameter**  | **Parameter value**                                                              |
+|----------------|----------------------------------------------------------------------------------|
+| url            | {{third-party API endpoint, without the third-party base url}}                   |
+| org_id         | {{org_id of the Cashflowy org/account}}                                          |
+| integration_id | {{integration_id of the org's integration with the particular third-party tool}} |
 ---
 ## Example illustrating the anatomy of a Passthrough API endpoint
 `https://app.cashflowy.io/passthrough?url=/banktransactions&org_id=36&integration_id=9` is the passthrough API URL to GET/PUT/POST
