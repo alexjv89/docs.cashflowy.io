@@ -7,6 +7,17 @@ eleventyNavigation:
   key: passthrough-api
   title: Passthrough API
 ---
+Passthrough API is a feature of the Cashflowy platform.
+
+It provides a way for developers to write scripts that read and write data from/to third-party tools without having to manage authentication with the third-party tools.
+
+This is possible because Cashflowy has integrations with third-party tools, and these integrations handle all the authentication logic and complexity.
+
+For scripting, Passthrough API is best used/accessed using the Cashflowy Node SDK. The SDK is essentially a wrapper on top of the Passthrough API.
+The docs of specific Passthrough API endpoints have examples of how to use it via the SDK. Look for the `Cashflowy usage` heading.
+* Eg. 1 - [Get Chart of Accounts from Zoho Books](https://docs.cashflowy.io/passthrough-api/zoho-books/get-chart-of-accounts.html)
+* Eg. 2 - [Get all transactions from one specific account via Zoho Books API](https://docs.cashflowy.io/passthrough-api/zoho-books/get-all-transactions-from-one-account.html)
+
 ## Anatomy of Passthrough API
 
 Applicable for GET/PUT/POST requests.
@@ -28,7 +39,7 @@ Applicable for GET/PUT/POST requests.
 `https://app.cashflowy.io/passthrough?url=/banktransactions&org_id=36&integration_id=9` is the passthrough API URL to GET/PUT/POST
 * Bank transactions present in the Zoho Books account (`/banktransactions` -is the official Zoho Books endpoint for the `Bank transactions` Zoho Books object [as mentioned in the Zoho Books API](https://www.zoho.com/books/api/v3/bank-transactions/#overview)) 
 * of the client whose Cashflowy org id = `36`.
-* This becomes possible because the Cashflowy org `36` has already set up a Cashflowy <> Zoho Books integeration, and the id of that integration is `9`
+* This becomes possible because the Cashflowy org `36` has already set up a `zoho_books` integration, and the id of that integration is `9`
 
 #### Notes
 1. If a Cashflowy org does not have an integration of type `zoho_books` set up in their account, the Passthrough API request shown in the above example will fail. 

@@ -10,7 +10,7 @@ eleventyNavigation:
 ---
 Also simply called "Cashflowy CLI" or "Cashflowy Jobs CLI".
 
-The Cashflowy CLI provides a fast, efficienct way manage jobs across multiple Cashflowy orgs.
+The Cashflowy CLI provides a fast, efficienct way to manage runner jobs across multiple Cashflowy orgs.
 It supports
 * the creation of new Runner Jobs
 * modification of existing Runner Jobs
