@@ -3,7 +3,7 @@ title: Passthrough API
 date: Last Modified 
 permalink: /passthrough-api.html
 eleventyNavigation:
-  order: 10
+  order: 5
   key: passthrough-api
   title: Passthrough API
 ---
