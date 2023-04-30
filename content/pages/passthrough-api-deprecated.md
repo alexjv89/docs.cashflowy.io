@@ -2,8 +2,6 @@
 title: Passthrough API
 date: Last Modified 
 permalink: /passthrough-api-deprecated.html
-eleventyNavigation:
-  key: passthrough-api-deprecated
 ---
 
 A typical company's financial process consists of many repetative processes. When these process are done manually they result in keystroke errors, delays and frustrations for upper management. Cashflowy platform helps you automate some of your companies financial processes. asdf asdf
