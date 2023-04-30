@@ -14,8 +14,8 @@ Applicable for GET/PUT/POST requests.
 ### Required Headers
 | **Header Key Name** | **Header Key Value** |
 |---------------------|-----------------------|
-| api-key             | ``{{api-key}}``           |
-| api-secret          | ``{{api-secret}}``        |
+| api-key             | `api-key`           |
+| api-secret          | `api-secret`        |
 
 ### Required Parameters
 | **Parameter**  | **Parameter value**                                                              |
