@@ -14,15 +14,15 @@ Applicable for GET/PUT/POST requests.
 ### Required Headers
 | **Header Key Name** | **Header Key Value** |
 |---------------------|-----------------------|
-| api-key             | {{api-key}}           |
-| api-secret          | {{api-secret}}        |
+| api-key             | ``{{api-key}}``           |
+| api-secret          | ``{{api-secret}}``        |
 
 ### Required Parameters
 | **Parameter**  | **Parameter value**                                                              |
 |----------------|----------------------------------------------------------------------------------|
-| url            | `{{third-party API endpoint, without the third-party base url}}`                  |
-| org_id         | `{{org_id of the Cashflowy org/account}}`                                          |
-| integration_id | `{{integration_id of the org's integration with the particular third-party tool}}` |
+| url            | `third-party API endpoint, without the third-party base url`                  |
+| org_id         | `org_id of the Cashflowy org/account`                                          |
+| integration_id | `integration_id of the org's integration with the particular third-party tool` |
 ---
 ## Example illustrating the anatomy of a Passthrough API endpoint
 `https://app.cashflowy.io/passthrough?url=/banktransactions&org_id=36&integration_id=9` is the passthrough API URL to GET/PUT/POST
