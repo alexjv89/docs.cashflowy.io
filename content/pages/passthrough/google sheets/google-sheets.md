@@ -8,11 +8,15 @@ eleventyNavigation:
   key: google-sheets 
   title: Google sheets
 ---
-Original Google sheets docs can be found here - https://stripe.com/docs/api
+Original Google sheets docs can be found here - https://developers.google.com/sheets/api/reference/rest
 
-Integration to Google sheets is done via service APIs. When your org is created with cashflowy, a google service email is also created for you. This passthough API can access any documents shared with this service email ID. 
+Integration to Google Sheets is done via Google Cloud Service Accounts. 
+When an org is created on app.cashflowy.io, we also create a "Service Account" for that org.
+This Service Account is then integrated with the Cashflowy org.
+There on, the Cashflowy Passthrough API can read and write to Google Sheets. (The sheets should be "shared" with the Service Account email address with "Editor" access.)
 
-All you need to do is share your document with the service email provided. The advantage for this method over Oauth is that when the service email makes update, you can see that in your version control. This makes easier to spot errors or tweets that you need to make to your scripts. 
+The advantage of the Service Account method over OAuth is the ability for strong version control. 
+Whenever a script modifies the sheet, that activity will get logged in the name of the service account and a new version will get created. This serves as an audit trail, and also helps with backup and troubleshooting.
 
 ## Overall options
 

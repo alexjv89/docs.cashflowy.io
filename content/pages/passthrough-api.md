@@ -13,7 +13,7 @@ It provides a way for developers to write scripts that read and write data from/
 
 This is possible because Cashflowy has integrations with third-party tools, and these integrations handle all the authentication logic and complexity.
 
-For scripting, Passthrough API is best used/accessed using the Cashflowy Node SDK. The SDK is essentially a wrapper on top of the Passthrough API.
+For scripting, Passthrough API is best used/accessed using the **Cashflowy Node SDK**. The SDK is essentially a wrapper on top of the Passthrough API.
 The docs of specific Passthrough API endpoints have examples of how to use it via the SDK. Look for the `Cashflowy usage` heading.
 * Eg. 1 - [Get Chart of Accounts from Zoho Books](https://docs.cashflowy.io/passthrough-api/zoho-books/get-chart-of-accounts.html)
 * Eg. 2 - [Get all transactions from one specific account via Zoho Books API](https://docs.cashflowy.io/passthrough-api/zoho-books/get-all-transactions-from-one-account.html)
